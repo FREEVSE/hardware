@@ -83,7 +83,7 @@
                     "filename_format": "%PREFIX/profile.gbr",
                     "layers": [
                     ],
-                    "milling": true,
+                    "milling": false,
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
