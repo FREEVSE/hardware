@@ -10489,8 +10489,8 @@ type 0204, grid 7.5 mm</description>
 <part name="R5" library="Passive" deviceset="RESISTOR" device="L" value="100K"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R6" library="Passive" deviceset="RESISTOR" device="L" value="910"/>
-<part name="R7" library="Passive" deviceset="RESISTOR" device="L" value="910K"/>
-<part name="R10" library="Passive" deviceset="RESISTOR" device="L" value="240K"/>
+<part name="R7" library="Passive" deviceset="RESISTOR" device="L" value="91K"/>
+<part name="R10" library="Passive" deviceset="RESISTOR" device="L" value="24K"/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10513,14 +10513,14 @@ type 0204, grid 7.5 mm</description>
 <part name="R16" library="Passive" deviceset="RESISTOR" device="L" value="38.3K"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R17" library="Passive" deviceset="RESISTOR" device="L" value="100K"/>
+<part name="R17" library="Passive" deviceset="RESISTOR" device="L" value="10K"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-TRIMM" device="64W" package3d_urn="urn:adsk.eagle:package:23748/1" value="100"/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-TRIMM" device="3296W" package3d_urn="urn:adsk.eagle:package:26033/1" value="100"/>
 <part name="X1" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-LONG-PAD"/>
 <part name="X2" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-04-PIN" device="-LONG-PAD"/>
 <part name="X3" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751248" device="" package3d_urn="urn:adsk.eagle:package:9395/1"/>
 <part name="X4" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751248" device="" package3d_urn="urn:adsk.eagle:package:9395/1"/>
-<part name="R2" library="Passive" deviceset="RESISTOR" device="L" value="13"/>
+<part name="R2" library="Passive" deviceset="RESISTOR" device="L" value="430"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$3" library="ESP32" deviceset="ESP32-DOIT-V1" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10539,8 +10539,8 @@ type 0204, grid 7.5 mm</description>
 <part name="X5" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-04-PIN" device="-LONG-PAD"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R9" library="Passive" deviceset="RESISTOR" device="L" value="240K"/>
-<part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R19" library="Passive" deviceset="RESISTOR" device="L" value="36K"/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10872,12 +10872,12 @@ GFI test</text>
 <instance part="+3V1" gate="G$1" x="137.16" y="33.02" smashed="yes" rot="R180">
 <attribute name="VALUE" x="137.16" y="35.56" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R9" gate="G$1" x="160.02" y="127" smashed="yes" rot="R270">
-<attribute name="NAME" x="161.5186" y="130.81" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="161.798" y="125.73" size="1.778" layer="96" rot="R270"/>
+<instance part="R19" gate="G$1" x="109.22" y="-12.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="107.7214" y="-16.51" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="107.442" y="-11.43" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V9" gate="G$1" x="160.02" y="134.62" smashed="yes">
-<attribute name="VALUE" x="162.56" y="127" size="1.778" layer="96" rot="R90"/>
+<instance part="GND9" gate="1" x="109.22" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="111.76" y="-25.4" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -11008,6 +11008,11 @@ GFI test</text>
 <wire x1="134.62" y1="43.18" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="-20.32" x2="109.22" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -11051,10 +11056,6 @@ GFI test</text>
 <pinref part="X5" gate="-4" pin="S"/>
 <wire x1="137.16" y1="43.18" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="+3V9" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="+15V" class="0">
@@ -11176,15 +11177,17 @@ GFI test</text>
 <wire x1="106.68" y1="5.08" x2="109.22" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="5.08" x2="109.22" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="-5.08" x2="109.22" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="-5.08" x2="109.22" y2="-5.08" width="0.1524" layer="91"/>
+<label x="121.92" y="-2.54" size="1.778" layer="95" rot="R180"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="-7.62" x2="109.22" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="109.22" y="-5.08"/>
-<label x="111.76" y="-17.78" size="1.778" layer="95" rot="R90"/>
+<wire x1="109.22" y1="-5.08" x2="121.92" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GPIO4"/>
-<wire x1="60.96" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
-<label x="68.58" y="58.42" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="GPIO33"/>
+<wire x1="-5.08" y1="68.58" x2="-12.7" y2="68.58" width="0.1524" layer="91"/>
+<label x="-25.4" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -11363,15 +11366,14 @@ GFI test</text>
 </net>
 <net name="DHT_DATA" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="GPIO13"/>
-<wire x1="-5.08" y1="53.34" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
-<label x="-25.4" y="53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="DAT"/>
 <label x="142.24" y="121.92" size="1.778" layer="95"/>
-<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO32"/>
+<wire x1="-5.08" y1="71.12" x2="-12.7" y2="71.12" width="0.1524" layer="91"/>
+<label x="-25.4" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -11440,21 +11442,21 @@ GFI test</text>
 <label x="132.08" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GPIO32"/>
-<wire x1="-5.08" y1="71.12" x2="-12.7" y2="71.12" width="0.1524" layer="91"/>
-<label x="-17.78" y="71.12" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="GPIO25"/>
+<wire x1="-5.08" y1="66.04" x2="-12.7" y2="66.04" width="0.1524" layer="91"/>
+<label x="-17.78" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="GPIO33"/>
-<wire x1="-5.08" y1="68.58" x2="-12.7" y2="68.58" width="0.1524" layer="91"/>
-<label x="-17.78" y="68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="X5" gate="-1" pin="S"/>
 <wire x1="129.54" y1="43.18" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
 <label x="129.54" y="35.56" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO26"/>
+<wire x1="-5.08" y1="63.5" x2="-12.7" y2="63.5" width="0.1524" layer="91"/>
+<label x="-17.78" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VACL" class="1">
