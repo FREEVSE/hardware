@@ -1,11 +1,11 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-12-31T07:05:15Z",
+        "CreationDate": "2020-03-23T23:45:00Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
-            "Version": "9.5.2"
+            "Version": "9.6.0"
         },
         "Part": "Single"
     },
@@ -18,7 +18,7 @@
         "Owner": "Matthew Goulart <matthew.goulart@gmail.com>",
         "Size": {
             "X": 54.864,
-            "Y": 104.14
+            "Y": 106.68
         }
     }
 }
