@@ -1,7 +1,7 @@
 {
     "author": {
-        "email": "matthew.goulart@gmail.com",
-        "name": "Matthew Goulart"
+        "email": "support.eagle@autodesk.com",
+        "name": "Autodesk EAGLE"
     },
     "description": {
         "EN": "EAGLE default 2 layer CAM job."
@@ -222,52 +222,6 @@
                     "name": "Silkscreen Bottom",
                     "polarity": "positive",
                     "type": "gerber_layer"
-                },
-                {
-                    "advanced_options": {
-                        "mirror": false,
-                        "offset_x": 0,
-                        "offset_y": 0,
-                        "rotate": false,
-                        "upside_down": false
-                    },
-                    "board_outline": false,
-                    "config": {
-                        "file_function": "Profile",
-                        "plating": "plated"
-                    },
-                    "filename_format": "%PREFIX/copper_top_removal.gbr",
-                    "layers": [
-                        114,
-                        115
-                    ],
-                    "milling": false,
-                    "name": "Top Copper Removal",
-                    "polarity": "positive",
-                    "type": "gerber_layer"
-                },
-                {
-                    "advanced_options": {
-                        "mirror": true,
-                        "offset_x": 0,
-                        "offset_y": 0,
-                        "rotate": false,
-                        "upside_down": false
-                    },
-                    "board_outline": false,
-                    "config": {
-                        "file_function": "Profile",
-                        "plating": "plated"
-                    },
-                    "filename_format": "%PREFIX/copper_bottom_removal.gbr",
-                    "layers": [
-                        114,
-                        117
-                    ],
-                    "milling": false,
-                    "name": "Bottom Copper Removal",
-                    "polarity": "positive",
-                    "type": "gerber_layer"
                 }
             ],
             "version": "RS274X"
@@ -321,7 +275,7 @@
             ]
         }
     ],
-    "timestamp": "2019-12-31T02:01:28",
+    "timestamp": "2019-07-17T17:48:33",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "9.2.0"
