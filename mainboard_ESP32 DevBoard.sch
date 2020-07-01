@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8806,9 +8806,9 @@ package type P</description>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="PS2" library="RAC20-12DK" deviceset="RAC20-12DK" device=""/>
+<part name="PS1" library="RAC20-12DK" deviceset="RAC20-12DK" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="PS3" library="R-78E3.3-0.5" deviceset="R-78E3.3-0.5" device=""/>
+<part name="PS2" library="R-78E3.3-0.5" deviceset="R-78E3.3-0.5" device=""/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
@@ -8857,7 +8857,7 @@ package type P</description>
 <part name="D7" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="/90" package3d_urn="urn:adsk.eagle:package:22437/2"/>
 <part name="R8" library="Passive" deviceset="RESISTOR" device="L" value="750"/>
-<part name="X5" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-04-PIN" device="-LONG-PAD"/>
+<part name="X4" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-04-PIN" device="-LONG-PAD"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R19" library="Passive" deviceset="RESISTOR" device="L" value="36K"/>
@@ -8881,7 +8881,7 @@ package type P</description>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X7" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751293" device="" package3d_urn="urn:adsk.eagle:package:9398/1"/>
+<part name="X3" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751293" device="" package3d_urn="urn:adsk.eagle:package:9398/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -8946,14 +8946,14 @@ GFI test</text>
 <instance part="+3V2" gate="G$1" x="167.64" y="60.96" smashed="yes" rot="R270">
 <attribute name="VALUE" x="160.02" y="58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="PS2" gate="G$1" x="20.32" y="142.24" smashed="yes">
+<instance part="PS1" gate="G$1" x="20.32" y="142.24" smashed="yes">
 <attribute name="NAME" x="7.62" y="151.13" size="1.778" layer="95"/>
 <attribute name="VALUE" x="7.62" y="132.08" size="1.778" layer="96"/>
 </instance>
 <instance part="GND10" gate="1" x="43.18" y="142.24" smashed="yes" rot="R90">
 <attribute name="VALUE" x="45.72" y="139.7" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="PS3" gate="G$1" x="71.12" y="144.78" smashed="yes">
+<instance part="PS2" gate="G$1" x="71.12" y="144.78" smashed="yes">
 <attribute name="NAME" x="60.9561" y="151.1379" size="1.77938125" layer="95"/>
 <attribute name="VALUE" x="60.9586" y="137.1573" size="1.77848125" layer="96"/>
 </instance>
@@ -9045,8 +9045,8 @@ GFI test</text>
 <attribute name="VALUE" x="84.582" y="-64.77" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="IC3" gate="A" x="114.3" y="-71.12" smashed="yes">
-<attribute name="NAME" x="111.76" y="-60.325" size="1.778" layer="95"/>
-<attribute name="VALUE" x="111.76" y="-63.5" size="1.778" layer="96"/>
+<attribute name="NAME" x="111.76" y="-62.865" size="1.778" layer="95"/>
+<attribute name="VALUE" x="111.76" y="-66.04" size="1.778" layer="96"/>
 </instance>
 <instance part="R15" gate="G$1" x="99.06" y="-60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="95.0214" y="-64.77" size="1.778" layer="95" rot="R90"/>
@@ -9065,16 +9065,16 @@ GFI test</text>
 <instance part="+3V7" gate="G$1" x="109.22" y="-30.48" smashed="yes">
 <attribute name="VALUE" x="104.14" y="-30.48" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R17" gate="G$1" x="40.64" y="-71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="46.99" y="-67.5386" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="46.99" y="-65.278" size="1.778" layer="96" rot="R180"/>
+<instance part="R17" gate="G$1" x="43.18" y="-76.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="49.53" y="-72.6186" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="49.53" y="-70.358" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND15" gate="1" x="63.5" y="-88.9" smashed="yes">
 <attribute name="VALUE" x="71.12" y="-86.36" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R18" gate="G$1" x="27.94" y="-78.74" smashed="yes">
-<attribute name="NAME" x="21.971" y="-82.55" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="24.13" y="-82.55" size="1.778" layer="96" rot="R90"/>
+<instance part="R18" gate="G$1" x="27.94" y="-83.82" smashed="yes">
+<attribute name="NAME" x="21.971" y="-87.63" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="24.13" y="-87.63" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="X1" gate="-2" x="144.78" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="145.542" y="129.54" size="1.524" layer="95" rot="R90"/>
@@ -9110,7 +9110,7 @@ GFI test</text>
 <instance part="+3V8" gate="G$1" x="114.3" y="43.18" smashed="yes" rot="R270">
 <attribute name="VALUE" x="121.92" y="43.18" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND4" gate="1" x="91.44" y="50.8" smashed="yes" rot="R90">
+<instance part="GND4" gate="1" x="91.44" y="48.26" smashed="yes">
 <attribute name="VALUE" x="99.06" y="50.8" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="JP1" gate="G$1" x="208.28" y="-48.26" smashed="yes" rot="R90">
@@ -9126,8 +9126,8 @@ GFI test</text>
 <instance part="P-3" gate="1" x="38.1" y="-66.04" smashed="yes">
 <attribute name="VALUE" x="35.56" y="-68.58" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+7" gate="1" x="53.34" y="-66.04" smashed="yes">
-<attribute name="VALUE" x="50.8" y="-71.12" size="1.778" layer="96" rot="R90"/>
+<instance part="P+7" gate="1" x="58.42" y="-76.2" smashed="yes" rot="R270">
+<attribute name="VALUE" x="53.34" y="-73.66" size="1.778" layer="96"/>
 </instance>
 <instance part="D7" gate="G$1" x="101.6" y="-53.34" smashed="yes">
 <attribute name="NAME" x="101.6" y="-50.3174" size="1.778" layer="95"/>
@@ -9136,27 +9136,27 @@ GFI test</text>
 <attribute name="NAME" x="87.63" y="34.925" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="93.98" y="44.45" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="R8" gate="G$1" x="121.92" y="-40.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="123.4186" y="-36.83" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="123.698" y="-41.91" size="1.778" layer="96" rot="R270"/>
+<instance part="R8" gate="G$1" x="127" y="-48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="123.4186" y="-44.45" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="123.698" y="-49.53" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="X5" gate="-1" x="193.04" y="127" smashed="yes" rot="R90">
+<instance part="X4" gate="-1" x="193.04" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="193.802" y="129.54" size="1.524" layer="95" rot="R90"/>
 </instance>
-<instance part="X5" gate="-2" x="195.58" y="127" smashed="yes" rot="R90">
+<instance part="X4" gate="-2" x="195.58" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="196.342" y="129.54" size="1.524" layer="95" rot="R90"/>
 </instance>
-<instance part="X5" gate="-3" x="198.12" y="127" smashed="yes" rot="R90">
+<instance part="X4" gate="-3" x="198.12" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="198.882" y="129.54" size="1.524" layer="95" rot="R90"/>
 </instance>
-<instance part="X5" gate="-4" x="200.66" y="127" smashed="yes" rot="R90">
+<instance part="X4" gate="-4" x="200.66" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="201.422" y="129.54" size="1.524" layer="95" rot="R90"/>
 </instance>
 <instance part="GND7" gate="1" x="198.12" y="114.3" smashed="yes">
-<attribute name="VALUE" x="198.12" y="116.84" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="198.12" y="111.76" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="200.66" y="114.3" smashed="yes" rot="R180">
-<attribute name="VALUE" x="200.66" y="116.84" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="200.66" y="111.76" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="R19" gate="G$1" x="91.44" y="-12.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="89.9414" y="-16.51" size="1.778" layer="95" rot="R90"/>
@@ -9233,25 +9233,25 @@ GFI test</text>
 <instance part="GND18" gate="1" x="200.66" y="-22.86" smashed="yes">
 <attribute name="VALUE" x="198.12" y="-25.4" size="1.778" layer="96"/>
 </instance>
-<instance part="X7" gate="-1" x="167.64" y="127" smashed="yes" rot="R90">
+<instance part="X3" gate="-1" x="167.64" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="168.529" y="128.27" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="X7" gate="-2" x="170.18" y="127" smashed="yes" rot="R90">
+<instance part="X3" gate="-2" x="170.18" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="171.069" y="128.27" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="X7" gate="-3" x="172.72" y="127" smashed="yes" rot="R90">
+<instance part="X3" gate="-3" x="172.72" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="173.609" y="128.27" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="X7" gate="-4" x="175.26" y="127" smashed="yes" rot="R90">
+<instance part="X3" gate="-4" x="175.26" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="176.149" y="128.27" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="X7" gate="-5" x="177.8" y="127" smashed="yes" rot="R90">
+<instance part="X3" gate="-5" x="177.8" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="178.689" y="128.27" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="X7" gate="-6" x="180.34" y="127" smashed="yes" rot="R90">
+<instance part="X3" gate="-6" x="180.34" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="181.229" y="128.27" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="X7" gate="-7" x="182.88" y="127" smashed="yes" rot="R90">
+<instance part="X3" gate="-7" x="182.88" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="183.769" y="128.27" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
@@ -9281,13 +9281,13 @@ GFI test</text>
 <wire x1="160.02" y1="66.04" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PS2" gate="G$1" pin="COM"/>
+<pinref part="PS1" gate="G$1" pin="COM"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="38.1" y1="142.24" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
-<pinref part="PS3" gate="G$1" pin="GND"/>
+<pinref part="PS2" gate="G$1" pin="GND"/>
 <wire x1="88.9" y1="142.24" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -9325,13 +9325,13 @@ GFI test</text>
 </segment>
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
-<wire x1="144.78" y1="124.46" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
-<label x="144.78" y="116.84" size="1.778" layer="95" rot="R90"/>
+<wire x1="144.78" y1="124.46" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
+<label x="144.78" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-4" pin="S"/>
-<wire x1="160.02" y1="124.46" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
-<label x="160.02" y="116.84" size="1.778" layer="95" rot="R90"/>
+<wire x1="160.02" y1="124.46" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
+<label x="160.02" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
@@ -9339,18 +9339,18 @@ GFI test</text>
 <wire x1="12.7" y1="-76.2" x2="22.86" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="22.86" y1="-76.2" x2="22.86" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-66.04" x2="5.08" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-66.04" x2="5.08" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-66.04" x2="5.08" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-76.2" x2="12.7" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="12.7" y="-76.2"/>
-<label x="-2.54" y="-66.04" size="1.778" layer="95"/>
+<label x="2.54" y="-66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="12.7" y1="-86.36" x2="12.7" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-2" pin="S"/>
-<wire x1="154.94" y1="124.46" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
-<label x="154.94" y="116.84" size="1.778" layer="95" rot="R90"/>
+<wire x1="154.94" y1="124.46" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
+<label x="154.94" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -9360,10 +9360,10 @@ GFI test</text>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND@2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="81.28" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X5" gate="-3" pin="S"/>
+<pinref part="X4" gate="-3" pin="S"/>
 <wire x1="198.12" y1="124.46" x2="198.12" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
@@ -9413,7 +9413,7 @@ GFI test</text>
 <junction x="200.66" y="-17.78"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-1" pin="K"/>
+<pinref part="X3" gate="-1" pin="K"/>
 <wire x1="167.64" y1="124.46" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
 <label x="167.64" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
@@ -9441,12 +9441,12 @@ GFI test</text>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="PS3" gate="G$1" pin="+VOUT"/>
+<pinref part="PS2" gate="G$1" pin="+VOUT"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="86.36" y1="147.32" x2="88.9" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X5" gate="-4" pin="S"/>
+<pinref part="X4" gate="-4" pin="S"/>
 <wire x1="200.66" y1="124.46" x2="200.66" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
@@ -9472,12 +9472,12 @@ GFI test</text>
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="PS2" gate="G$1" pin="+VOUT"/>
+<pinref part="PS1" gate="G$1" pin="+VOUT"/>
 <wire x1="38.1" y1="147.32" x2="40.64" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="PS3" gate="G$1" pin="+VIN"/>
+<pinref part="PS2" gate="G$1" pin="+VIN"/>
 <wire x1="55.88" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 </segment>
@@ -9498,8 +9498,7 @@ GFI test</text>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="-71.12" x2="53.34" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-71.12" x2="53.34" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-76.2" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+12V"/>
 </segment>
 <segment>
@@ -9517,8 +9516,8 @@ GFI test</text>
 <net name="CP_PWM" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN"/>
-<wire x1="33.02" y1="-5.08" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
-<label x="20.32" y="-5.08" size="1.778" layer="95"/>
+<wire x1="33.02" y1="-5.08" x2="30.48" y2="-5.08" width="0.1524" layer="91"/>
+<label x="30.48" y="-5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO15"/>
@@ -9528,8 +9527,8 @@ GFI test</text>
 </net>
 <net name="CP" class="0">
 <segment>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="10.16" width="0.1524" layer="91"/>
-<label x="71.12" y="10.16" size="1.778" layer="95"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
+<label x="71.12" y="7.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="5.08" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -9541,8 +9540,8 @@ GFI test</text>
 </segment>
 <segment>
 <pinref part="X1" gate="-1" pin="S"/>
-<wire x1="142.24" y1="124.46" x2="142.24" y2="116.84" width="0.1524" layer="91"/>
-<label x="142.24" y="116.84" size="1.778" layer="95" rot="R90"/>
+<wire x1="142.24" y1="124.46" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
+<label x="142.24" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="CP_READ" class="0">
@@ -9552,11 +9551,11 @@ GFI test</text>
 <wire x1="91.44" y1="5.08" x2="91.44" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="-5.08" x2="91.44" y2="-5.08" width="0.1524" layer="91"/>
-<label x="104.14" y="-2.54" size="1.778" layer="95" rot="R180"/>
+<label x="93.98" y="-5.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="-7.62" x2="91.44" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="91.44" y="-5.08"/>
-<wire x1="91.44" y1="-5.08" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-5.08" x2="93.98" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO33"/>
@@ -9581,16 +9580,16 @@ GFI test</text>
 <wire x1="12.7" y1="-60.96" x2="12.7" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-53.34" x2="22.86" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="22.86" y="-53.34"/>
-<wire x1="-2.54" y1="-63.5" x2="5.08" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-63.5" x2="5.08" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-63.5" x2="5.08" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-53.34" x2="12.7" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="12.7" y="-53.34"/>
-<label x="-2.54" y="-63.5" size="1.778" layer="95"/>
+<label x="2.54" y="-63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-1" pin="S"/>
-<wire x1="152.4" y1="124.46" x2="152.4" y2="116.84" width="0.1524" layer="91"/>
-<label x="152.4" y="116.84" size="1.778" layer="95" rot="R90"/>
+<wire x1="152.4" y1="124.46" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
+<label x="152.4" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -9637,8 +9636,8 @@ GFI test</text>
 <net name="GFI_SET" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="68.58" y1="-50.8" x2="58.42" y2="-50.8" width="0.1524" layer="91"/>
-<label x="58.42" y="-50.8" size="1.778" layer="95"/>
+<wire x1="68.58" y1="-50.8" x2="66.04" y2="-50.8" width="0.1524" layer="91"/>
+<label x="66.04" y="-50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO18"/>
@@ -9656,9 +9655,9 @@ GFI test</text>
 <wire x1="99.06" y1="-68.58" x2="104.14" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="99.06" y="-68.58"/>
 <wire x1="104.14" y1="-68.58" x2="106.68" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="-68.58" x2="104.14" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-68.58" x2="104.14" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="104.14" y="-68.58"/>
-<label x="106.68" y="-66.04" size="1.778" layer="95" rot="R90"/>
+<label x="104.14" y="-66.04" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO23"/>
@@ -9670,8 +9669,8 @@ GFI test</text>
 <segment>
 <pinref part="IC3" gate="A" pin="I1"/>
 <wire x1="106.68" y1="-73.66" x2="104.14" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="-73.66" x2="104.14" y2="-88.9" width="0.1524" layer="91"/>
-<label x="106.68" y="-88.9" size="1.778" layer="95" rot="R90"/>
+<wire x1="104.14" y1="-73.66" x2="104.14" y2="-76.2" width="0.1524" layer="91"/>
+<label x="104.14" y="-76.2" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO21"/>
@@ -9682,8 +9681,8 @@ GFI test</text>
 <net name="ENER" class="0">
 <segment>
 <pinref part="IC3" gate="A" pin="O"/>
-<label x="127" y="-68.58" size="1.778" layer="95" rot="R180"/>
-<wire x1="121.92" y1="-71.12" x2="127" y2="-71.12" width="0.1524" layer="91"/>
+<label x="121.92" y="-73.66" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="121.92" y1="-71.12" x2="121.92" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -9694,45 +9693,43 @@ GFI test</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="27.94" y1="-71.12" x2="35.56" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-58.42" x2="27.94" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-76.2" x2="38.1" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-58.42" x2="27.94" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="-IN"/>
 <wire x1="30.48" y1="-58.42" x2="27.94" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="-71.12" x2="27.94" y2="-73.66" width="0.1524" layer="91"/>
-<junction x="27.94" y="-71.12"/>
+<wire x1="27.94" y1="-76.2" x2="27.94" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="27.94" y="-76.2"/>
 <pinref part="R18" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="GFI_TEST" class="0">
 <segment>
 <pinref part="X2" gate="-3" pin="S"/>
-<wire x1="157.48" y1="124.46" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
-<label x="157.48" y="116.84" size="1.778" layer="95" rot="R90"/>
+<wire x1="157.48" y1="124.46" x2="157.48" y2="121.92" width="0.1524" layer="91"/>
+<label x="157.48" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="-35.56" x2="121.92" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="127" y1="-43.18" x2="127" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<label x="127" y="-27.94" size="1.778" layer="95" rot="R270"/>
+<label x="127" y="-40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R18" gate="G$1" pin="S"/>
-<wire x1="35.56" y1="-83.82" x2="38.1" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="-78.74" x2="35.56" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-78.74" x2="35.56" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-83.82" x2="38.1" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENER_COIL" class="1">
 <segment>
 <pinref part="K1" gate="G$1" pin="DS1"/>
-<wire x1="154.94" y1="-53.34" x2="147.32" y2="-53.34" width="0.1524" layer="91"/>
-<label x="139.7" y="-53.34" size="1.778" layer="95"/>
+<wire x1="154.94" y1="-53.34" x2="152.4" y2="-53.34" width="0.1524" layer="91"/>
+<label x="152.4" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-4" pin="K"/>
+<pinref part="X3" gate="-4" pin="K"/>
 <wire x1="175.26" y1="121.92" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
 <label x="175.26" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
@@ -9788,8 +9785,8 @@ GFI test</text>
 <net name="GFI_TST_SIG" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="-45.72" x2="121.92" y2="-50.8" width="0.1524" layer="91"/>
-<label x="116.84" y="-38.1" size="1.778" layer="95" rot="R270"/>
+<wire x1="127" y1="-53.34" x2="127" y2="-55.88" width="0.1524" layer="91"/>
+<label x="127" y="-55.88" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO16"/>
@@ -9799,9 +9796,9 @@ GFI test</text>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="X5" gate="-2" pin="S"/>
-<wire x1="195.58" y1="124.46" x2="195.58" y2="116.84" width="0.1524" layer="91"/>
-<label x="195.58" y="116.84" size="1.778" layer="95" rot="R90"/>
+<pinref part="X4" gate="-2" pin="S"/>
+<wire x1="195.58" y1="124.46" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
+<label x="195.58" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO25"/>
@@ -9811,9 +9808,9 @@ GFI test</text>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="X5" gate="-1" pin="S"/>
-<wire x1="193.04" y1="124.46" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
-<label x="193.04" y="116.84" size="1.778" layer="95" rot="R90"/>
+<pinref part="X4" gate="-1" pin="S"/>
+<wire x1="193.04" y1="124.46" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
+<label x="193.04" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO26"/>
@@ -9823,41 +9820,41 @@ GFI test</text>
 </net>
 <net name="VACL" class="1">
 <segment>
-<pinref part="PS2" gate="G$1" pin="VAC_IN(L)"/>
+<pinref part="PS1" gate="G$1" pin="VAC_IN(L)"/>
 <wire x1="2.54" y1="147.32" x2="-5.08" y2="147.32" width="0.1524" layer="91"/>
 <label x="-5.08" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="K1" gate="G$1" pin="DS3"/>
-<wire x1="154.94" y1="-60.96" x2="147.32" y2="-60.96" width="0.1524" layer="91"/>
-<label x="147.32" y="-60.96" size="1.778" layer="95"/>
+<wire x1="154.94" y1="-60.96" x2="152.4" y2="-60.96" width="0.1524" layer="91"/>
+<label x="152.4" y="-60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-7" pin="K"/>
+<pinref part="X3" gate="-7" pin="K"/>
 <wire x1="182.88" y1="121.92" x2="182.88" y2="124.46" width="0.1524" layer="91"/>
 <label x="182.88" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="VACN" class="1">
 <segment>
-<pinref part="PS2" gate="G$1" pin="VAC_IN(N)"/>
+<pinref part="PS1" gate="G$1" pin="VAC_IN(N)"/>
 <wire x1="2.54" y1="137.16" x2="-5.08" y2="137.16" width="0.1524" layer="91"/>
 <label x="-5.08" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-5" pin="K"/>
+<pinref part="X3" gate="-5" pin="K"/>
 <wire x1="177.8" y1="121.92" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
 <label x="177.8" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-6" pin="K"/>
+<pinref part="X3" gate="-6" pin="K"/>
 <wire x1="180.34" y1="121.92" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
 <label x="180.34" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="-12V" class="0">
 <segment>
-<pinref part="PS2" gate="G$1" pin="-VOUT"/>
+<pinref part="PS1" gate="G$1" pin="-VOUT"/>
 <wire x1="38.1" y1="137.16" x2="40.64" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="P-1" gate="1" pin="-12V"/>
 </segment>
@@ -9935,7 +9932,7 @@ GFI test</text>
 <label x="149.86" y="0" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-2" pin="K"/>
+<pinref part="X3" gate="-2" pin="K"/>
 <wire x1="170.18" y1="121.92" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
 <label x="170.18" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
@@ -9947,7 +9944,7 @@ GFI test</text>
 <label x="149.86" y="-17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-3" pin="K"/>
+<pinref part="X3" gate="-3" pin="K"/>
 <wire x1="172.72" y1="121.92" x2="172.72" y2="124.46" width="0.1524" layer="91"/>
 <label x="172.72" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
