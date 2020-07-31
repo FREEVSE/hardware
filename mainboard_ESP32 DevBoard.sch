@@ -17366,7 +17366,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="IC1" library="Op Amp" deviceset="OP-AMP-2" device="-LONG"/>
 <part name="R11" library="Passive" deviceset="RESISTOR" device="L" value="35.7K"/>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2"/>
-<part name="R12" library="Passive" deviceset="RESISTOR" device="L" value="40K"/>
+<part name="R12" library="Passive" deviceset="RESISTOR" device="L" value="39k"/>
 <part name="R13" library="Passive" deviceset="RESISTOR" device="L" value="200K"/>
 <part name="R15" library="Passive" deviceset="RESISTOR" device="L" value="10K"/>
 <part name="R16" library="Passive" deviceset="RESISTOR" device="L" value="3.9K"/>
@@ -17387,7 +17387,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="D7" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="/90" package3d_urn="urn:adsk.eagle:package:22437/2"/>
-<part name="R8" library="Passive" deviceset="RESISTOR" device="L" value="750"/>
+<part name="R8" library="Passive" deviceset="RESISTOR" device="L" value="330"/>
 <part name="X4" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-04-PIN" device="-LONG-PAD"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -17407,15 +17407,15 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="D10" library="Passive" deviceset="DIODE" device="" value="TVS 12.1V"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$4" library="optocouplers" deviceset="OPTOCOUPLER-2" device=""/>
-<part name="R4" library="Passive" deviceset="RESISTOR" device="L" value="750"/>
-<part name="R5" library="Passive" deviceset="RESISTOR" device="L" value="750"/>
+<part name="R4" library="Passive" deviceset="RESISTOR" device="L" value="12k"/>
+<part name="R5" library="Passive" deviceset="RESISTOR" device="L" value="12k"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X3" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751293" device="" package3d_urn="urn:adsk.eagle:package:9398/1"/>
 <part name="U$5" library="EVSE" deviceset="MOV-07D391K" device=""/>
 <part name="D8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2"/>
-<part name="R6" library="Passive" deviceset="RESISTOR" device="L" value="1.3K"/>
+<part name="R6" library="Passive" deviceset="RESISTOR" device="L" value="1.2k"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="5.6uF"/>
 <part name="R9" library="Passive" deviceset="RESISTOR" device="L" value="1K"/>
 <part name="D5" library="Passive" deviceset="ZENER" device="" value="8V"/>
@@ -18203,17 +18203,17 @@ GFI test</text>
 </net>
 <net name="ENER_COIL" class="1">
 <segment>
-<pinref part="K1" gate="G$1" pin="DS1"/>
-<wire x1="154.94" y1="-53.34" x2="149.86" y2="-50.8" width="0.1524" layer="91"/>
-<label x="144.78" y="-50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$5" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="-50.8" x2="144.78" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="149.86" y="-50.8"/>
-</segment>
-<segment>
 <pinref part="X3" gate="-4" pin="K"/>
 <wire x1="175.26" y1="121.92" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
 <label x="175.26" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="K1" gate="G$1" pin="DS3"/>
+<wire x1="154.94" y1="-60.96" x2="149.86" y2="-60.96" width="0.1524" layer="91"/>
+<label x="144.78" y="-60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$5" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="-60.96" x2="144.78" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="149.86" y="-60.96"/>
 </segment>
 </net>
 <net name="DHT_DATA" class="0">
@@ -18298,17 +18298,17 @@ GFI test</text>
 <label x="-5.08" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="K1" gate="G$1" pin="DS3"/>
-<wire x1="154.94" y1="-60.96" x2="149.86" y2="-60.96" width="0.1524" layer="91"/>
-<label x="144.78" y="-60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$5" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="-60.96" x2="144.78" y2="-60.96" width="0.1524" layer="91"/>
-<junction x="149.86" y="-60.96"/>
-</segment>
-<segment>
 <pinref part="X3" gate="-7" pin="K"/>
 <wire x1="182.88" y1="121.92" x2="182.88" y2="124.46" width="0.1524" layer="91"/>
 <label x="182.88" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="K1" gate="G$1" pin="DS1"/>
+<wire x1="154.94" y1="-53.34" x2="149.86" y2="-50.8" width="0.1524" layer="91"/>
+<label x="144.78" y="-50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$5" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="-50.8" x2="144.78" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="149.86" y="-50.8"/>
 </segment>
 </net>
 <net name="VACN" class="1">
