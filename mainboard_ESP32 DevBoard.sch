@@ -17386,6 +17386,10 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="R18" library="Passive" deviceset="RESISTOR" device="L" value="3.3K"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="MOV1" library="EVSE" deviceset="MOV-07D471K" device=""/>
+<part name="R14" library="Passive" deviceset="RESISTOR" device="L" value="2.4K"/>
+<part name="R20" library="Passive" deviceset="RESISTOR" device="L" value="2.4K"/>
+<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17741,6 +17745,20 @@ GFI test</text>
 <attribute name="NAME" x="144.78" y="-46.99" size="1.778" layer="95"/>
 <attribute name="VALUE" x="144.78" y="-46.99" size="1.778" layer="96" align="top-left"/>
 </instance>
+<instance part="R14" gate="G$1" x="210.82" y="139.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="209.3214" y="135.89" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="214.122" y="135.89" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R20" gate="G$1" x="220.98" y="139.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="219.4814" y="135.89" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="224.282" y="135.89" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V3" gate="G$1" x="210.82" y="149.86" smashed="yes">
+<attribute name="VALUE" x="205.74" y="149.86" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="+3V7" gate="G$1" x="220.98" y="149.86" smashed="yes">
+<attribute name="VALUE" x="215.9" y="149.86" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17934,6 +17952,16 @@ GFI test</text>
 <wire x1="88.9" y1="43.18" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 <junction x="99.06" y="43.18"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="144.78" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="144.78" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -18242,6 +18270,11 @@ GFI test</text>
 <wire x1="15.24" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
 <label x="7.62" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="134.62" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
+<label x="220.98" y="132.08" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -18253,6 +18286,11 @@ GFI test</text>
 <pinref part="U4" gate="G$1" pin="GPIO26"/>
 <wire x1="15.24" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
 <label x="7.62" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="134.62" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
+<label x="210.82" y="132.08" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="VACL" class="1">
