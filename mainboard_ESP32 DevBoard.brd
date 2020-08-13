@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -160,6 +160,10 @@
 <hole x="51.054" y="3.81" drill="3.5"/>
 <hole x="51.054" y="102.87" drill="3.5"/>
 <hole x="3.81" y="102.87" drill="3.5"/>
+<dimension x1="0" y1="106.68" x2="54.864" y2="106.68" x3="27.432" y3="118.11" textsize="1.778" layer="47"/>
+<dimension x1="3.81" y1="102.87" x2="51.054" y2="102.87" x3="27.432" y3="114.3" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="0" y1="0" x2="0" y2="106.68" x3="-15.24" y3="53.34" textsize="1.778" layer="47" dtype="vertical"/>
+<dimension x1="3.81" y1="3.81" x2="3.81" y2="102.87" x3="-10.16" y3="53.34" textsize="1.778" layer="47" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2237,7 +2241,7 @@ design rules under a new name.</description>
 </element>
 <element name="U4" library="ESP32" package="ESP32-DOIT-V1" value="ESP32-DOIT-V1" x="15.24" y="25.4" smashed="yes"/>
 <element name="X1" library="Rembrandt Electronics - JST XH Connectors v1-0" package="JST-XH-02-PACKAGE-LONG-PAD" value="JST-XH-02-PIN-LONG-PAD" x="52.07" y="11.43" smashed="yes" rot="R90">
-<attribute name="NAME" x="47.435" y="12.2" size="1.016" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
+<attribute name="NAME" x="50.03" y="6.795" size="1.016" layer="25" font="vector" ratio="10" align="center"/>
 <attribute name="VALUE" x="48.1775" y="8.1275" size="1.016" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="X2" library="Rembrandt Electronics - JST XH Connectors v1-0" package="JST-XH-04-PACKAGE-LONG-PAD" value="JST-XH-04-PIN-LONG-PAD" x="52.07" y="36.83" smashed="yes" rot="R90">
@@ -2272,11 +2276,11 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="39.7256" y="16.9926" size="0.9906" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="U3" library="EVSE" package="DIL08-LONG" value="DG419DJ-L" x="36.83" y="7.62" smashed="yes">
-<attribute name="NAME" x="31.496" y="6.731" size="1.016" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="30.48" y="7.62" size="1.016" layer="25" ratio="10" rot="R180" align="center"/>
 <attribute name="VALUE" x="33.274" y="6.985" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="R3" library="Passive" package="0204/7-L" value="910" x="43.18" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.9326" y="3.048" size="1.016" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="43.18" y="1.3716" size="1.016" layer="25" ratio="10" rot="R180" align="center"/>
 <attribute name="VALUE" x="43.6626" y="5.9944" size="0.9906" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="0.1uF" x="15.24" y="11.43" smashed="yes" rot="R90">
@@ -2292,7 +2296,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="21.844" y="9.144" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="D10" library="EVSE" package="DO15" value="12.1V" x="46.482" y="9.144" smashed="yes" rot="R270">
-<attribute name="NAME" x="47.371" y="5.08" size="1.016" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="46.482" y="1.397" size="1.016" layer="25" ratio="10" align="center"/>
 <attribute name="VALUE" x="43.688" y="11.176" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="U2" library="EVSE" package="DIL8" value="ILD620GB" x="35.56" y="54.61" smashed="yes" rot="R90">
