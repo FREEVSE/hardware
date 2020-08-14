@@ -18459,11 +18459,6 @@ GFI test</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,53.34,139.7,PS2,COM,GND,,,"/>
-<approved hash="208,1,101.6,144.78,+3V3,out,,,,"/>
-<approved hash="208,1,104.14,144.78,+3V3,sup,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
