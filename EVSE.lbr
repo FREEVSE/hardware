@@ -168,10 +168,10 @@
 <package name="DO15" urn="urn:adsk.eagle:footprint:43093/1" locally_modified="yes">
 <description>&lt;B&gt;TVS DIODE&lt;/B&gt;&lt;p&gt;
 diameter3.6 mm, horizontal, grid 11.46 mm</description>
-<wire x1="0.381" y1="1.27" x2="0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.381" y1="0" x2="0.381" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.381" y1="-1.27" x2="-1.27" y2="0" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0" x2="0.381" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="1.27" x2="1.778" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="0" x2="1.778" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-1.27" x2="0.127" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.127" y1="0" x2="1.778" y2="1.27" width="0.1524" layer="21"/>
 <pad name="C" x="-5.334" y="0" drill="0.8128" shape="long"/>
 <pad name="A" x="5.334" y="0" drill="0.8128" shape="long"/>
 <text x="-2.286" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
@@ -180,18 +180,21 @@ diameter3.6 mm, horizontal, grid 11.46 mm</description>
 <wire x1="-3.6068" y1="1.8034" x2="3.6068" y2="1.8034" width="0.127" layer="21"/>
 <wire x1="3.6068" y1="1.8034" x2="3.6068" y2="-1.8034" width="0.127" layer="21"/>
 <wire x1="3.6068" y1="-1.8034" x2="-3.6068" y2="-1.8034" width="0.127" layer="21"/>
-<rectangle x1="-3.175" y1="-1.8034" x2="-2.54" y2="1.8034" layer="21"/>
-<wire x1="-1.016" y1="-1.27" x2="-1.27" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.016" x2="-1.27" y2="0.762" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="0.762" x2="-1.524" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="1.016" x2="-1.778" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="1.016" x2="-1.524" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0" x2="-1.524" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="-0.762" x2="-1.27" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0" x2="-2.032" y2="0" width="0.127" layer="21"/>
-<wire x1="0.381" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="0.381" y1="-1.27" x2="0.127" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="0.127" y1="-1.016" x2="0.127" y2="0.762" width="0.127" layer="21"/>
+<wire x1="0.127" y1="0.762" x2="-0.127" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="1.016" x2="-0.381" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="1.016" x2="-0.127" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="0" x2="-0.127" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="-0.762" x2="0.127" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.667" y2="0" width="0.127" layer="21"/>
 <rectangle x1="-4.826" y1="-0.254" x2="-3.6068" y2="0.254" layer="51"/>
 <rectangle x1="3.6068" y1="-0.254" x2="4.826" y2="0.254" layer="51"/>
+<wire x1="-1.778" y1="-1.27" x2="-1.778" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="0" x2="-1.778" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="1.27" x2="-0.127" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.127" y1="0" x2="-1.778" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="0" x2="-2.667" y2="0" width="0.127" layer="21"/>
 </package>
 <package name="DIL08" urn="urn:adsk.eagle:footprint:16129/1">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -386,14 +389,17 @@ package type P</description>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<wire x1="1.8415" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<pin name="C" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="4.3815" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-0.762" x2="1.778" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.778" y1="-1.27" x2="2.032" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="1.778" y1="-1.27" x2="1.778" y2="0.762" width="0.254" layer="94"/>
 <wire x1="1.778" y1="0.762" x2="1.27" y2="1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="1.27" x2="1.016" y2="1.524" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="4.318" y1="1.27" x2="1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0" x2="4.318" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="4.318" y1="-1.27" x2="4.318" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="DG419">
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
@@ -639,7 +645,7 @@ D4 0 6 MD3
 .ENDS 2n7000</model>
 </spice>
 </deviceset>
-<deviceset name="P6KE15A" uservalue="yes">
+<deviceset name="P6KE15CA" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="TVS_DIODE" x="0" y="0"/>
 </gates>
